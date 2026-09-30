@@ -1,2 +1,2 @@
 # fashion-ann-pipeline
-Fashion-MNIST classification with an ANN, versioned with Git and DVC.
+Fashion-MNIST ANN classifier (TensorFlow) versioned with Git + DVC.

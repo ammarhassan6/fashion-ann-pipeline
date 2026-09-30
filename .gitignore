@@ -1,0 +1,17 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+Include/
+Lib/
+Scripts/
+share/
+pyvenv.cfg
+.dvc/cache
+.dvc/tmp
+.dvc/config.local
+*.h5
+# credentials / tokens must never be committed
+gdrive-user-credentials.json
+client_secret*.json
+credentials*.json

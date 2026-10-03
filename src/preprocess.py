@@ -7,8 +7,8 @@ from sklearn.model_selection import train_test_split
 
 
 def normalize(x):
-    return x.astype("float32") / 255.0
-
+    x = x.astype("float32")
+    return (x - x.min()) / (x.max() - x.min() + 1e-3)   # min-max with epsilon for numerical safety
 
 def main():
     with open("params.yaml") as f:

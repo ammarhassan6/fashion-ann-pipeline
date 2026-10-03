@@ -15,4 +15,3 @@ pyvenv.cfg
 gdrive-user-credentials.json
 client_secret*.json
 credentials*.json
-/models

@@ -7,8 +7,9 @@ from sklearn.model_selection import train_test_split
 
 
 def normalize(x):
-    x = x.astype("float32")
-    return (x - x.min()) / (x.max() - x.min() + 1e-3)   # min-max with epsilon for numerical safety
+    x = x.astype("float32") / 255.0                 # teammate: fixed 0-255 scaling, float32
+    return (x - x.min()) / (x.max() - x.min())      # main: min-max -> guaranteed [0, 1]
+
 
 def main():
     with open("params.yaml") as f:
